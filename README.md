@@ -48,7 +48,7 @@ In multilayer mode, the secondary layer is overlayed with parts of the first lay
 ## Warnings
 This program can use a lot of memory, like a lot, so I reccomend building for 64-bit if you want to do this with larger images.
 
-I mainly reccomend using this program with 256x256 images with 8bpp, as that's what Earthbound was designed with and only what this program can handle.
+I mainly reccomend using this program with 256x256 images with 8bpp, as that's what Earthbound was designed with and only what this program can handle. In the source code there's a file called test.bmp that is a perfect example of this, or you could use exactracted Earhbound Backgrounds. I do plan on adding PKHack support with loading the bgs.dat file, but not for right now.
 
 When using multiple layers, the layer images **HAVE** to be the same size, no exceptions.
 
