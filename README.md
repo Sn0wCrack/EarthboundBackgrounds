@@ -1,12 +1,14 @@
 # Earthbound Backgrounds
 A program to creature earthbound battle backgrounds out of any image
 
+## Download
+
+[Downloads Here](https://github.com/Sn0wCrack/EarthboundBackgrounds/releases)
 
 ## What is this?
 This is a simple (not really) program written in C# to manipulate images into Earthbound Style battlebackgrounds.
 
 I got the idea after seeing an update from the Mother 4 Fangame Project's Team featuring the equation to creature Earthbound style backgrounds, and started this, gave up, and recently started working on it again.
-
 
 ## How does this work?
 
