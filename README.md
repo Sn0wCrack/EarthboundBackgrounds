@@ -1,6 +1,8 @@
 # Earthbound Backgrounds
 A program to creature earthbound battle backgrounds out of any image
 
+![Screenshot](http://i.imgur.com/xrgzWY9.png)
+
 ## Download
 
 [Downloads Here](https://github.com/Sn0wCrack/EarthboundBackgrounds/releases)
