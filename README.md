@@ -3,6 +3,8 @@ A program to creature earthbound battle backgrounds out of any image
 
 ![Screenshot](http://i.imgur.com/xrgzWY9.png)
 
+<div style='position:relative;padding-bottom:calc(100% / 2.40)'><iframe src='https://gfycat.com/ifr/SecondhandQualifiedDragonfly' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+
 ## Download
 
 [Downloads Here](https://github.com/Sn0wCrack/EarthboundBackgrounds/releases)
