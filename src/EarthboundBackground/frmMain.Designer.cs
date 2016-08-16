@@ -44,21 +44,24 @@
             this.btnOpenImage2 = new System.Windows.Forms.Button();
             this.btnClearImages = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.trkAmplitude = new System.Windows.Forms.TrackBar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.trkFrequency = new System.Windows.Forms.TrackBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.trkScale = new System.Windows.Forms.TrackBar();
-            this.label5 = new System.Windows.Forms.Label();
-            this.trkCompression = new System.Windows.Forms.TrackBar();
             this.lblFormula = new System.Windows.Forms.Label();
+            this.trkCompression = new System.Windows.Forms.TrackBar();
+            this.label5 = new System.Windows.Forms.Label();
+            this.trkScale = new System.Windows.Forms.TrackBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.trkFrequency = new System.Windows.Forms.TrackBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.trkAmplitude = new System.Windows.Forms.TrackBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.nudFramerate = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trkAmplitude)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trkFrequency)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trkScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trkCompression)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkScale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkFrequency)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkAmplitude)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudFramerate)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOpenImage1
@@ -82,6 +85,7 @@
             // 
             // tmrDelta
             // 
+            this.tmrDelta.Interval = 1000;
             this.tmrDelta.Tick += new System.EventHandler(this.tmrDelta_Tick);
             // 
             // btnStart
@@ -179,6 +183,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.nudFramerate);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.lblFormula);
             this.groupBox1.Controls.Add(this.trkCompression);
             this.groupBox1.Controls.Add(this.label5);
@@ -195,71 +201,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fine Tuning";
             // 
-            // label2
+            // lblFormula
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Amplitude:";
-            // 
-            // trkAmplitude
-            // 
-            this.trkAmplitude.Location = new System.Drawing.Point(9, 45);
-            this.trkAmplitude.Maximum = 100;
-            this.trkAmplitude.Minimum = 1;
-            this.trkAmplitude.Name = "trkAmplitude";
-            this.trkAmplitude.Size = new System.Drawing.Size(421, 45);
-            this.trkAmplitude.TabIndex = 16;
-            this.trkAmplitude.Value = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 93);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Frequency:";
-            // 
-            // trkFrequency
-            // 
-            this.trkFrequency.Location = new System.Drawing.Point(9, 109);
-            this.trkFrequency.Maximum = 100;
-            this.trkFrequency.Minimum = 1;
-            this.trkFrequency.Name = "trkFrequency";
-            this.trkFrequency.Size = new System.Drawing.Size(421, 45);
-            this.trkFrequency.TabIndex = 1;
-            this.trkFrequency.Value = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 157);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Scale:";
-            // 
-            // trkScale
-            // 
-            this.trkScale.Location = new System.Drawing.Point(9, 173);
-            this.trkScale.Maximum = 100;
-            this.trkScale.Minimum = 1;
-            this.trkScale.Name = "trkScale";
-            this.trkScale.Size = new System.Drawing.Size(421, 45);
-            this.trkScale.TabIndex = 1;
-            this.trkScale.Value = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 221);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Compression (Only used in Type 2):";
+            this.lblFormula.AutoSize = true;
+            this.lblFormula.Location = new System.Drawing.Point(16, 347);
+            this.lblFormula.Name = "lblFormula";
+            this.lblFormula.Size = new System.Drawing.Size(0, 13);
+            this.lblFormula.TabIndex = 12;
             // 
             // trkCompression
             // 
@@ -271,13 +219,102 @@
             this.trkCompression.TabIndex = 1;
             this.trkCompression.Value = 1;
             // 
-            // lblFormula
+            // label5
             // 
-            this.lblFormula.AutoSize = true;
-            this.lblFormula.Location = new System.Drawing.Point(16, 347);
-            this.lblFormula.Name = "lblFormula";
-            this.lblFormula.Size = new System.Drawing.Size(0, 13);
-            this.lblFormula.TabIndex = 12;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 221);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(173, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Compression (Only used in Type 2):";
+            // 
+            // trkScale
+            // 
+            this.trkScale.Location = new System.Drawing.Point(9, 173);
+            this.trkScale.Maximum = 100;
+            this.trkScale.Minimum = 1;
+            this.trkScale.Name = "trkScale";
+            this.trkScale.Size = new System.Drawing.Size(421, 45);
+            this.trkScale.TabIndex = 1;
+            this.trkScale.Value = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Scale:";
+            // 
+            // trkFrequency
+            // 
+            this.trkFrequency.Location = new System.Drawing.Point(9, 109);
+            this.trkFrequency.Maximum = 100;
+            this.trkFrequency.Minimum = 1;
+            this.trkFrequency.Name = "trkFrequency";
+            this.trkFrequency.Size = new System.Drawing.Size(421, 45);
+            this.trkFrequency.TabIndex = 1;
+            this.trkFrequency.Value = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Frequency:";
+            // 
+            // trkAmplitude
+            // 
+            this.trkAmplitude.Location = new System.Drawing.Point(9, 45);
+            this.trkAmplitude.Maximum = 100;
+            this.trkAmplitude.Minimum = 1;
+            this.trkAmplitude.Name = "trkAmplitude";
+            this.trkAmplitude.Size = new System.Drawing.Size(421, 45);
+            this.trkAmplitude.TabIndex = 16;
+            this.trkAmplitude.Value = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Amplitude:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 292);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Framerate";
+            // 
+            // nudFramerate
+            // 
+            this.nudFramerate.Location = new System.Drawing.Point(9, 324);
+            this.nudFramerate.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nudFramerate.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudFramerate.Name = "nudFramerate";
+            this.nudFramerate.Size = new System.Drawing.Size(120, 20);
+            this.nudFramerate.TabIndex = 18;
+            this.nudFramerate.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
             // 
             // frmMain
             // 
@@ -303,10 +340,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trkAmplitude)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trkFrequency)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trkScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trkCompression)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkScale)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkFrequency)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkAmplitude)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudFramerate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,6 +376,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TrackBar trkCompression;
         private System.Windows.Forms.Label lblFormula;
+        private System.Windows.Forms.NumericUpDown nudFramerate;
+        private System.Windows.Forms.Label label6;
     }
 }
 
